@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toobar_id"
+        layout="@layout/rounded_toobar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp" />
+
+    <TextView
+        android:id="@+id/you_are"
+        android:layout_below="@+id/toobar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="You are ?"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/you_are"
+        android:layout_marginBottom="30dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/doubt" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/admin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/white"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:text="Admin"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Mechanic_bussiness_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_button"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/white"
+        android:text="Mechanic Business"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Mechanic_bussiness_button"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/white"
+        android:text="User"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="15dp"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="3dp" />
+
+</RelativeLayout>

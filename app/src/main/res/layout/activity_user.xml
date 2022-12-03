@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.User_Activity">
+
+    <include layout="@layout/rounded_toobar"
+        android:id="@+id/toobar_id"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_below="@+id/toobar_id"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="74dp"
+        android:gravity="center"
+        android:text="Stuck with your vehicle? Don't panic"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_alignStart="@+id/tv1"
+        android:layout_alignEnd="@+id/tv1"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="93dp"
+        android:gravity="center"
+        android:text="We are here"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/fetch_location_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Fetch My Location"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="why?"
+        android:textColor="#EC0000"
+        android:id="@+id/tv3"
+        android:layout_below="@id/fetch_location_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"/>
+
+</RelativeLayout>
