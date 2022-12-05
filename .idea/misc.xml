@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/drawable/black_border.xml" value="0.16" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/drawable/border.xml" value="0.1555" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1555" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.1555" />
@@ -14,10 +15,21 @@
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/activity_register.xml" value="0.24270833333333333" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/activity_user.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/admin_business_detail_approval.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/black_border.xml" value="0.2546875" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/drawer_admin.xml" value="0.2263888888888889" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/drawer_businessowner.xml" value="0.2273148148148148" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/drawer_user.xml" value="0.2273148148148148" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_approved_bussiness.xml" value="0.2273148148148148" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_dashboard.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_dashboard2.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_dashboard_businessowner.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_history.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_my_businesses.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_new_business.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_order_history.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_profile.xml" value="0.2557291666666667" />
+        <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/fragment_profile2.xml" value="0.2557291666666667" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/rounded_toobar.xml" value="0.2273148148148148" />
         <entry key="..\:/Users/koushal jha/AndroidStudioProjects/HelpMe/app/src/main/res/layout/rounded_toobar1.xml" value="0.2273148148148148" />
       </map>

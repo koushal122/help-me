@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".business_owner.dashboard">
+
+    <Button
+        android:id="@+id/Requestcurrently"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#E61B1B"
+        android:text="Request Received Currently"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/My_business"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Requestcurrently"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="My Bussinesses"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Updatedetails"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/My_business"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Update Profile details"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/history"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Updatedetails"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Order request Completed"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/approvalStatus"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Status of Bussiness approval"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/contactAdmin"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/approvalStatus"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/black"
+        android:text="Contact Admin"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

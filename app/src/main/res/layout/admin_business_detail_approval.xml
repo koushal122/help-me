@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/black_border"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bussines_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:text="Bussiness Name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bussines_name"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Name :- "
+        android:textSize="18sp"
+        android:id="@+id/nametv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bussines_name"
+        android:layout_marginStart="5dp"
+        android:id="@+id/ownerName"
+        android:layout_toRightOf="@+id/nametv"
+        android:padding="5dp"
+        android:text="ownername"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametv"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Mobile Number :- "
+        android:textSize="18sp"
+        android:id="@+id/mobiletv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametv"
+        android:layout_marginStart="5dp"
+        android:id="@+id/mobileNumber"
+        android:layout_toRightOf="@+id/mobiletv"
+        android:padding="5dp"
+        android:text="123456"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobiletv"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="services offering :- "
+        android:textSize="18sp"
+        android:id="@+id/servicetv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobiletv"
+        android:layout_marginStart="5dp"
+        android:id="@+id/ServiceOffering"
+        android:layout_toRightOf="@+id/servicetv"
+        android:padding="5dp"
+        android:text="bike and car services"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servicetv"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Available days :- "
+        android:textSize="18sp"
+        android:id="@+id/availabletv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servicetv"
+        android:layout_marginStart="5dp"
+        android:id="@+id/availableDays"
+        android:layout_toRightOf="@+id/availabletv"
+        android:padding="5dp"
+        android:text="Mon-Fri"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availabletv"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Timming :- "
+        android:textSize="18sp"
+        android:id="@+id/timetv"/>
+
+    <TextView
+        android:id="@+id/timming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availabletv"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@+id/timetv"
+        android:padding="5dp"
+        android:text="10-7"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timetv"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Full Adress details :- "
+        android:textSize="18sp"
+        android:id="@+id/adresstv"/>
+
+    <TextView
+        android:id="@+id/fullAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timetv"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@+id/adresstv"
+        android:padding="5dp"
+        android:text="aaaaaaaaaaaaaaa"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/approve_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adresstv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#64D812"
+        android:text="Approve" />
+
+    <Button
+        android:id="@+id/deny_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullAdress"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#EC0606"
+        android:text="Deny" />
+
+
+
+</RelativeLayout>

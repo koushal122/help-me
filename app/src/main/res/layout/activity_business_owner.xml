@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".business_owner.Business_owner_Activity">
-    <include layout="@layout/rounded_toobar"/>
+    <include layout="@layout/rounded_toobar"
+        android:id="@+id/toolbarid"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarid"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/business_owner_navigation" />
 
 </RelativeLayout>

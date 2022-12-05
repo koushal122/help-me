@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Dashboard">
+
+    <include layout="@layout/rounded_toobar"
+        android:id="@+id/toobar_id"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toobar_id"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Pending Approval"
+        android:textSize="25sp"
+        android:id="@+id/pending_approval_textview"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pending_approval_textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/pending_approval_Recycler_View"/>
+
+</RelativeLayout>

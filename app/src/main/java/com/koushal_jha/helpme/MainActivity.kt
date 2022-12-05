@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.hide()
         binding.adminButton.setOnClickListener{
             val intent=Intent(this,RegisterActivity::class.java)
             intent.putExtra("type","admin");

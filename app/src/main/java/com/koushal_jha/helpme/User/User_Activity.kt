@@ -12,6 +12,7 @@ class User_Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.hide()
         binding.tv3.setOnClickListener {
             Toast.makeText(this,"We need location permission to get mechanics" +
                     " nearby you please allow us",Toast.LENGTH_LONG).show()

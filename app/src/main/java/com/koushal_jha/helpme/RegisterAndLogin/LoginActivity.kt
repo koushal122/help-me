@@ -22,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.hide()
         val db= Firebase.firestore
         mAuth= FirebaseAuth.getInstance()
         binding.LoginActivityLoginNowButton.setOnClickListener {
@@ -33,13 +34,14 @@ class LoginActivity : AppCompatActivity() {
                     val userId= mAuth.uid.toString()
                     var type:String=""
                     db.collection("users")
-                        .document(userId)
+                        .document(userId)//after validation we will get unique userId identified by documentId
                         .get()
                         .addOnSuccessListener {
                             Log.d("loginInfo", "DocumentSnapshot data: ${it.data?.get("type")}")
                             val t:MutableMap<String,Any>
                             t= it.data as MutableMap<String, Any>
-                            type=t.get("type").toString()
+                            type=t.get("type").toString() //because we have saved type in info and from there we
+                            //are getting type and going to respective activity
                             if(type.equals("admin")){
                                 //to to admin Activity
                                 startActivity(Intent(this, Admin_activity::class.java))

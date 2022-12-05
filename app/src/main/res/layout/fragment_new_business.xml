@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".business_owner.new_business">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Bussiness Name"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:textSize="14sp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/businessName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Name"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/ownername"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Mobile Number"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mobile Number"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/mobileNumber"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Services you offer"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="services (ex :- all bike and car services)"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/services"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available days"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter like Mon-Fri"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/AvailableDays"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timming"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter like 10am to 5pm"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/timming"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your state"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="state"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/state"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter city"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="city"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/city"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Full adress"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:textSize="14sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Complete adress"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/fullAdress"/>
+        <Button
+            android:layout_width="match_parent"
+            style="@style/Widget.Material3.Button"
+            android:layout_height="wrap_content"
+            android:text="Please Enable location Now"
+            android:textSize="18sp"
+            android:backgroundTint="#2BB532"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/LocationButton"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Why?"
+            android:textStyle="bold|italic"
+            android:textColor="#E40000"
+            android:textSize="17sp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/whytv"/>
+
+        <Button
+            android:layout_width="match_parent"
+            style="@style/Widget.Material3.Button"
+            android:layout_height="wrap_content"
+            android:text="Create Bussiness"
+            android:textSize="18sp"
+            android:backgroundTint="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15sp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/createbusiness"/>
+
+    </LinearLayout>
+
+</ScrollView>

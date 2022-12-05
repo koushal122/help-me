@@ -63,8 +63,10 @@
         android:id="@+id/loginActivity_createAccountTextview"/>
     <Button
         android:layout_width="match_parent"
+        style="@style/Widget.Material3.Button"
         android:layout_height="wrap_content"
         android:text="Login Now"
+        android:textSize="18sp"
         android:backgroundTint="@color/black"
         android:layout_margin="15dp"
         android:layout_alignParentBottom="true"

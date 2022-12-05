@@ -5,56 +5,50 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.koushal_jha.helpme.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Dashboard.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Dashboard : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard, container, false)
-    }
+        val view=inflater.inflate(R.layout.fragment_dashboard_admin, container, false)
+        val db=Firebase.firestore
+        val pendingApproval=ArrayList<business_details>()
+        db.collection("pendingApproval")
+            .get()
+            .addOnSuccessListener {
+                for (document in it){
+                    var pb:business_details=business_details("","",
+                    "","","","","")
+                    pb.Adress=document.get("adress").toString()
+                    pb.businessName=document.get("businessName").toString()
+                    pb.mobileNumber=document.get("mobileNumber").toString()
+                    pb.ownerName=document.get("ownerName").toString()
+                    pb.serviceOffering=document.get("serviveOffering").toString()
+                    pb.availableDays=document.get("availableDays").toString()
+                    pb.timming=document.get("timming").toString()
+                    pendingApproval.add(pb)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Dashboard.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Dashboard().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
                 }
+                val recyclerview=this.requireActivity().findViewById<RecyclerView>(R.id.pending_approval_Recycler_View)
+                recyclerview.layoutManager=LinearLayoutManager(this.requireActivity())
+                val adapter=pedingApprovalAdapter(pendingApproval,this.requireActivity())
+                recyclerview.adapter=adapter
             }
+            .addOnFailureListener{
+                showMessage("Something Went wrong")
+            }
+
+        return view
+    }
+    fun showMessage(msg:String){
+        Toast.makeText(context,msg,Toast.LENGTH_LONG).show()
     }
 }

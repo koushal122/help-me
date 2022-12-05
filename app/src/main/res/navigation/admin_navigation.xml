@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_navigation"
+    app:startDestination="@id/dashboard2">
+
+    <fragment
+        android:id="@+id/dashboard2"
+        android:name="com.koushal_jha.helpme.Admin.Dashboard"
+        android:label="fragment_dashboard_admin"
+        tools:layout="@layout/fragment_dashboard_admin" >
+        <action
+            android:id="@+id/action_dashboard2_to_approved_bussiness"
+            app:destination="@id/approved_bussiness" />
+        <action
+            android:id="@+id/action_dashboard2_to_removed_business"
+            app:destination="@id/removed_business" />
+    </fragment>
+    <fragment
+        android:id="@+id/approved_bussiness"
+        android:name="com.koushal_jha.helpme.Admin.approved_bussiness"
+        android:label="fragment_approved_bussiness"
+        tools:layout="@layout/fragment_approved_bussiness" />
+    <fragment
+        android:id="@+id/removed_business"
+        android:name="com.koushal_jha.helpme.Admin.removed_business"
+        android:label="fragment_removed_business"
+        tools:layout="@layout/fragment_removed_business" />
+</navigation>

@@ -22,6 +22,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.hide()
         val db=Firebase.firestore
         //getting type from intent
         val type=intent.getStringExtra("type").toString()
@@ -50,7 +51,7 @@ class RegisterActivity : AppCompatActivity() {
                             "type" to type
                         )
                         db.collection("users")
-                            .document(userId)
+                            .document(userId)//here we are passing userId as document name so we can identify unique user
                             .set(user)
                             .addOnSuccessListener {
                                  Toast.makeText(this,"user Added Succesfully",Toast.LENGTH_LONG).show()
@@ -58,12 +59,13 @@ class RegisterActivity : AppCompatActivity() {
                             .addOnFailureListener{
                                 Toast.makeText(this,"Something went wrong in adding user",Toast.LENGTH_LONG).show()
                             }
+                        //here untill this step we will get type of user
                         if(type=="admin"){
                             //to to admin Activity
                             startActivity(Intent(this,Admin_activity::class.java))
                             finish()
                         }
-                        else if(type=="busines_owner"){
+                        else if(type=="business_owner"){
                             startActivity(Intent(this,Business_owner_Activity::class.java))
                             finish()
                         }

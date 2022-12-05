@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/business_owner_navigation"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/history"
+        android:name="com.koushal_jha.helpme.business_owner.history"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/profile_businessowner"
+        android:name="com.koushal_jha.helpme.business_owner.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile_businessowner" />
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.koushal_jha.helpme.business_owner.dashboard"
+        android:label="fragment_dashboard_businessowner"
+        tools:layout="@layout/fragment_dashboard_businessowner" >
+        <action
+            android:id="@+id/action_dashboard_to_profile2"
+            app:destination="@id/profile_businessowner" />
+        <action
+            android:id="@+id/action_dashboard_to_history2"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_dashboard_to_my_businesses"
+            app:destination="@id/my_businesses" />
+        <action
+            android:id="@+id/action_dashboard_to_my_pending_approval_business"
+            app:destination="@id/my_pending_approval_business" />
+        <action
+            android:id="@+id/action_dashboard_to_my_approved_business"
+            app:destination="@id/my_approved_business" />
+        <action
+            android:id="@+id/action_dashboard_to_new_business"
+            app:destination="@id/new_business" />
+    </fragment>
+    <fragment
+        android:id="@+id/my_approved_business"
+        android:name="com.koushal_jha.helpme.business_owner.my_approved_business"
+        android:label="fragment_my_approved_business"
+        tools:layout="@layout/fragment_my_approved_business" />
+    <fragment
+        android:id="@+id/my_businesses"
+        android:name="com.koushal_jha.helpme.business_owner.my_businesses"
+        android:label="fragment_my_businesses"
+        tools:layout="@layout/fragment_my_businesses" />
+    <fragment
+        android:id="@+id/my_pending_approval_business"
+        android:name="com.koushal_jha.helpme.business_owner.my_pending_approval_business"
+        android:label="fragment_my_pending_approval_business"
+        tools:layout="@layout/fragment_my_pending_approval_business" />
+    <fragment
+        android:id="@+id/new_business"
+        android:name="com.koushal_jha.helpme.business_owner.new_business"
+        android:label="fragment_new_business"
+        tools:layout="@layout/fragment_new_business" />
+</navigation>
