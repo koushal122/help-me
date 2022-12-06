@@ -10,7 +10,10 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.koushal_jha.helpme.R
 
-class pedingApprovalAdapter (val pedingApproval:ArrayList<business_details>,val context: Context):RecyclerView.Adapter<pedingApprovalAdapter.viewHolder>() {
+class pedingApprovalAdapter
+    (val pedingApproval:ArrayList<business_details>,val context: Context):
+    RecyclerView.Adapter<pedingApprovalAdapter.viewHolder>() {
+
     class viewHolder(itemview: View):RecyclerView.ViewHolder(itemview) {
         var businessName=itemview.findViewById<TextView>(R.id.bussines_name)
         var ownerName=itemview.findViewById<TextView>(R.id.ownerName)
